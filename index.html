@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <section class="container_1">
+      <!-- 標題 -->
+      <div class="container_1_title">
+        <h2>There is no one</h2>
+        <h6>who loves pain</h6>
+      </div>
+      <button id="section1">ＦＯＲＭ</button>
+      <article>
+        <div>
+          <div
+            class="paragraph d-flex justify-content-center align-items-center"
+          >
+            <img src="./image/cactus.png" alt="" />
+            <h5>paragraph</h5>
+            <img src="./image/cactus.png" alt="" />
+          </div>
+          <ol>
+            <li>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <div
+            class="paragraph d-flex justify-content-center align-items-center"
+          >
+            <img src="./image/cactus.png" alt="" />
+            <h5>paragraph</h5>
+            <img src="./image/cactus.png" alt="" />
+          </div>
+          <ol>
+            <li>
+              <p>Quisque sodales leo <span>vitae vulputate auctor.</span></p>
+            </li>
+            <li>
+              <p>
+                Proin ac justo ut nisl tincidunt imperdiet.Maecenas viverra
+                libero a pellentesque blandit.
+              </p>
+            </li>
+            <li>
+              <p>
+                Cras tristique tellus id leo bibendum, eu dapibus nisl accumsan.
+              </p>
+            </li>
+            <li>
+              <p>
+                Donec ultrices sapien
+                <span>vitae leo venenatis ullamcorper.</span>
+              </p>
+            </li>
+          </ol>
+        </div>
+        <div class="boat_bubble">
+          <img class="boat_1" src="./image/sup.png" alt="" />
+          <img class="paddle" src="./image/paddle.png" alt="" />
+          <img class="bubble_big" src="./image/Ellipse_246.png" alt="" />
+          <img class="bubble_small" src="./image/Ellipse_248.png" alt="" />
+        </div>
+        <div class="boat_fire">
+          <img class="boat_2" src="./image/sup_fire.png" alt="" />
+          <img class="fire" src="./image/fire.png" alt="" />
+        </div>
+      </article>
+    </section>
+    <!-- 分隔線 -->
+    <img class="waves" src="./image/waves.png" alt="" />
+    <section class="container_2">
+      <!-- 抽獎資料1 -->
+      <div class="lottery_info1">
+        <div class="lottery_info1_content">
+          <form id="info" action="#">
+            <div class="turtle">
+              <h5 id="section2">ＦＯＲＭ</h5>
+              <img src="./image/turtle.png" alt="" />
+            </div>
+            <div>
+              <label for="store">store&nbsp;<span>*</span></label>
+              <input type="text" id="store" name="store" list="store_list" />
+              <datalist id="store_list">
+                <option data-value="0">store1</option>
+                <option data-value="1">store2</option>
+                <option data-value="2">store3</option>
+              </datalist>
+              <input
+                type="hidden"
+                name="store"
+                id="storeInput-hidden"
+                name="store"
+              />
+            </div>
+            <div>
+              <label for="guest_name">name&nbsp;<span>*</span></label>
+              <input name="guest_name" id="guest_name" placeholder="Ex:URay" />
+            </div>
+            <div>
+              <label for="guest_phone">phone&nbsp;<span>*</span></label>
+              <input
+                name="guest_phone"
+                id="guest_phone"
+                placeholder="Ex:0912345678"
+                type="tel"
+              />
+            </div>
+            <div>
+              <label for="amount"
+                >Amount of consumption&nbsp;<span>*</span></label
+              >
+              <input name="amount" id="amount" placeholder="Ex:200" />
+            </div>
+            <div>
+              <label for="payment">payment&nbsp;<span>*</span></label>
+              <input
+                type="text"
+                id="payment"
+                list="payment_list"
+                name="payment"
+              />
+              <datalist id="payment_list">
+                <option data-value="3">digital payment</option>
+                <option data-value="4">ATM</option>
+              </datalist>
+              <input type="hidden" name="payment" id="paymentInput-hidden" />
+            </div>
+          </form>
+          <button type="submit" id="btn-submit">
+            <div class="d-flex justify-content-center">
+              <img src="./image/failure.png" alt="" />
+              <h5>submit</h5>
+            </div>
+          </button>
+          <span id="error-message">This person does not exist</span>
+        </div>
+      </div>
+      <!-- 背景沙子 -->
+      <div class="lottery_sand">
+        <div class="lottery_gift">
+          <div class="row justify-content-center">
+            <div class="col-xl-4 gift">
+              <div class="certificateA">
+                <span>A</span>
+                <img src="./image/certificateA.png" alt="" />
+                <button disabled>ONE</button>
+              </div>
+              <h5>dehumidifier</h5>
+            </div>
+            <div class="col-xl-4 gift">
+              <div class="certificateA">
+                <span>B</span>
+                <img src="./image/certificateA.png" alt="" />
+                <button disabled>ONE</button>
+              </div>
+              <h5>range hood</h5>
+            </div>
+            <div class="col-xl-4 gift">
+              <div class="certificateA">
+                <span>C</span>
+                <img src="./image/certificateA.png" alt="" />
+                <button disabled>ONE</button>
+              </div>
+              <h5>vacuum cleaner</h5>
+            </div>
+
+            <div class="col-xl-4 gift">
+              <div class="certificateA">
+                <span>D</span>
+                <img src="./image/certificateD.png" alt="" />
+                <button disabled>ONE</button>
+              </div>
+              <h5>toaster</h5>
+            </div>
+            <div class="col-xl-4 gift">
+              <div class="certificateA">
+                <span>E</span>
+                <img src="./image/certificateD.png" alt="" />
+                <button disabled>ONE</button>
+              </div>
+              <h5>scale</h5>
+            </div>
+            <div class="col-xl-4 gift">
+              <div class="certificateA">
+                <span>F</span>
+                <img src="./image/certificateD.png" alt="" />
+                <button disabled>ONE</button>
+              </div>
+              <h5>straightening iron</h5>
+            </div>
+            <div class="col-xl-4 gift">
+              <div class="certificateA">
+                <span>G</span>
+                <img src="./image/certificateD.png" alt="" />
+                <button disabled>FIVE</button>
+              </div>
+              <h5>vacuum cleaner</h5>
+            </div>
+            <div class="col-xl-4 gift">
+              <div class="certificateA">
+                <span>H</span>
+                <img src="./image/certificateD.png" alt="" />
+                <button disabled>TEN</button>
+              </div>
+              <h5>rice cooker</h5>
+            </div>
+            <div class="col-xl-4 gift">
+              <div class="certificateA">
+                <span>D</span>
+                <img src="./image/certificateD.png" alt="" />
+                <button disabled>ONE</button>
+              </div>
+              <h5>toaster</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 抽獎資料2 -->
+      <div class="lottery_info2">
+        <div class="lottery_info2_inner">
+          <h4>13.32</h4>
+          <h4>who seeks after it and</h4>
+          <h4>wants to have it</h4>
+        </div>
+        <img src="./image/lighthouse.png" alt="" />
+      </div>
+      <div class="shopping">
+        <h4>Neque porro quisquam <br />est qui dolorem!</h4>
+        <div class="market_outside">
+          <img src="./image/roof.png" alt="" />
+          <div class="market_middle">
+            <div class="market_inner">
+              <h2>Argentina</h2>
+              <div
+                class="star d-flex justify-content-center align-items-center"
+              >
+                <img src="./image/star.png" alt="" />
+                <span>adipisci velit.</span>
+              </div>
+              <div class="star d-flex justify-content-center align-items-center">
+                <img src="./image/star.png" alt="" />
+                <span>adipisci velit.</span>
+              </div>
+              <div class="row justify-content-center">
+                <img src="./image/house.png" alt="" />
+                <img src="./image/motorcycle.png" alt="" />
+                <img src="./image/gift.png" alt="" />
+                <img src="./image/boatman.png" alt="" />
+              </div>
+              <img src="./image/threepoint.png" alt="" />
+            </div>
+            <img src="./image/bigpoint.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.min.js"></script>
+    <script src="./JS/index.js"></script>
+  </body>
+</html>

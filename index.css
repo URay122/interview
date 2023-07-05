@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
+
+
+/* 第一個container */
+.container_1 {
+    padding: 60px 24px 40px 24px;
+    background-image: url(./image/whitewaves.png);
+    background-color: #204379;
+    background-repeat: no-repeat;
+    background-size: 400% 85%;
+    background-position: bottom;
+}
+
+.container_1_title {
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.container_1_title h2 {
+    line-height: 40px;
+    letter-spacing: 0.2em;
+}
+
+.container_1_title h6 {
+    line-height: 35px;
+    letter-spacing: 0.2em;
+}
+
+.container_1 button {
+    display: block;
+    margin: 32px auto;
+    width: 200px;
+    padding: 16px 20px;
+    border: 0px;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: #B57556;
+    color: #fff;
+    box-shadow: 0 0 20px #FAA3A3E8;
+}
+
+.container_1 article {
+    margin: 0 auto;
+    max-width: 808px;
+    background-color: #DAE4F1;
+    padding: 24px 16px;
+    border-radius: 20px;
+    border: 2px solid #B57556;
+    position: relative;
+    color: #204379;
+
+}
+
+.container_1 article div:first-child {
+    margin-bottom: 24px;
+}
+
+.container_1 article div .paragraph {
+    margin-bottom: 16px;
+}
+
+.container_1 .paragraph h5 {
+    margin: 0 3px;
+}
+
+.container_1 ol {
+    padding: 0 16px;
+}
+
+.container_1 ol li p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.8px;
+}
+
+.container_1 ol li::marker {
+    font-weight: 400;
+}
+
+.container_1 ol:nth-child(2) li:first-child p span {
+    text-decoration: underline;
+}
+
+/* 小船跟泡泡的圖片 */
+.boat_bubble {
+    position: absolute;
+    right: 2%;
+    top: -8%;
+}
+
+.boat_1 {
+    position: relative;
+}
+
+.paddle {
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+
+.bubble_big {
+    position: absolute;
+    left: 40%;
+    bottom: 100%;
+}
+
+.bubble_small {
+    position: absolute;
+    right: 15%;
+    bottom: 150%;
+}
+
+/* 小船跟煙火 */
+.boat_fire {
+    position: absolute;
+    left: 3%;
+    top: 92%;
+}
+
+.boat_2 {
+    position: relative;
+    left: 12%;
+}
+
+.fire {
+    position: absolute;
+    left: -25%;
+    top: 25%;
+}
+
+/* container_1 & container_1 中間的浪*/
+.waves {
+    width: 100%;
+    display: block;
+}
+
+/* 第二個container */
+.container_2 {
+    background-color: #E2D9D3;
+}
+
+.lottery_info1 {
+    padding: 40px 24px 58px;
+    margin: 0 auto;
+    max-width: 808px;
+}
+
+.lottery_info1_content {
+    padding-top: 40px;
+}
+
+
+.lottery_info1_content form {
+    position: relative;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border: 2px solid #B57556;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 1px 20px 0px #49484840;
+
+}
+
+.lottery_info1_content form div:not(.turtle) {
+    display: flex;
+    flex-direction: column;
+}
+
+.lottery_info1_content form div:not(:last-child, .turtle) {
+    margin-bottom: 20px;
+}
+
+.lottery_info1_content form label {
+    color: #204379;
+    font-size: 16px;
+    font-weight: 400;
+    border: none !important;
+}
+
+.lottery_info1_content form input {
+    border-radius: 16px;
+    border: 1px solid #204379;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #000 !important;
+}
+
+#payment::-webkit-calendar-picker-indicator,
+#store::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    color: #204379;
+}
+
+.lottery_info1_content form span {
+    color: #B57556;
+    font-size: 14px;
+
+}
+
+#btn-submit {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px -4px 10px 0px #FFFFFFE5, 0px 4px 10px 0px #28232359;
+    background: #B57556;
+    color: #fff;
+    letter-spacing: 0.2em;
+    padding: 16px 20px;
+    border: 0px;
+    border-radius: 50px;
+    width: 200px;
+    line-height: 22.5px;
+}
+
+#btn-submit>div {
+    gap: 16px;
+}
+
+#btn-submit img {
+    display: none;
+
+}
+
+.lottery_info1_content>span {
+    display: none;
+    color: red;
+    line-height: 21px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+/* ＦＯＲＭ＆海龜 */
+.turtle {
+    position: absolute;
+    left: 50%;
+    bottom: 95%;
+    transform: translate(-50%, 0px);
+}
+
+.turtle h5 {
+    box-shadow: 0px 1px 10px 0px #49484840;
+    background: #fff;
+    color: #B57556;
+    letter-spacing: 0.2em;
+    padding: 10px 20px;
+    border: 2px solid #B57556;
+    border-radius: 50px;
+    line-height: 22.5px;
+    text-align: center;
+}
+
+.turtle img {
+    position: absolute;
+    left: 81%;
+    bottom: -20%;
+}
+
+.lottery_sand {
+    background-image: url(./image/sand.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 24px;
+    border-radius: 40px 40px 0px 0px;
+    border: 0;
+}
+
+.lottery_sand .row {
+    gap: 32px;
+}
+
+.lottery_gift {
+    max-width: 598px;
+    margin: 0 auto;
+}
+
+.gift {
+    width: 178px;
+    height: 112px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 0px 0px #EDEEF0;
+    position: relative;
+    padding: 0;
+    margin: 10px 0px;
+}
+
+.row .gift:nth-child(9) {
+    opacity: 0;
+}
+
+
+.gift .certificateA span {
+    color: #fff;
+    font-size: 17px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 7.5px));
+}
+
+.gift:nth-child(4) .certificateA span,
+.gift:nth-child(5) .certificateA span,
+.gift:nth-child(6) .certificateA span,
+.gift:nth-child(7) .certificateA span,
+.gift:nth-child(8) .certificateA span {
+    transform: translate(-50%, calc(-50% + 15px));
+
+}
+
+.certificateA img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 15px));
+}
+
+.certificateA button {
+    border: 1px solid #A0BCC8;
+    color: #A0BCC8;
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    width: 45px;
+    position: absolute;
+    right: 8px;
+    transform: translate(0%, calc(-50% + 31px));
+}
+
+.gift h5 {
+    color: #A0BCC8;
+    text-align: center;
+    line-height: 22.5px;
+}
+
+/* 抽獎資料2 */
+.lottery_info2 {
+    padding: 40px 24px;
+}
+
+.lottery_info2_inner {
+    text-align: center;
+    position: relative;
+    max-width: 274px;
+    margin: 0 auto;
+}
+
+.lottery_info2_inner h4 {
+    color: #204379;
+    line-height: 28px;
+}
+
+.lottery_info2_inner h4:nth-child(1) {
+    color: #B57556;
+}
+
+/* 文字旁的斜線 */
+.lottery_info2_inner::before,
+.lottery_info2_inner::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 75px;
+    height: 1px;
+    background-color: #204379;
+}
+
+.lottery_info2_inner::before {
+    transform: translate(-50%, -50%) rotate(254deg);
+    left: 0;
+}
+
+.lottery_info2_inner::after {
+    transform: translate(-50%, -50%) rotate(106deg);
+    left: 100%;
+}
+
+.lottery_info2 img {
+    display: block;
+    margin: 20px auto 0;
+}
+
+.shopping {
+    background-color: #204379;
+    padding: 40px 19px;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.shopping>h4 {
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 0.2em;
+    margin-bottom: 24px;
+}
+
+.market_outside {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    height: 493px;
+    width: 376px;
+}
+
+.market_outside>img {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+
+.market_middle {
+    height: 492px;
+    width: 341px;
+    padding-top: 23px;
+    background: #D3D4DB;
+    position: absolute;
+    border: 0;
+    border-radius: 50px 50px 30px 30px;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0px);
+}
+
+.market_inner {
+    width: 320px;
+    margin: 0 auto;
+    background-color: #F7F7F8;
+    padding: 53px 53px 49px;
+    text-align: center;
+    height: 432px;
+    border-radius: 20px 20px 0 0;
+}
+
+.market_inner h2 {
+    font-weight: 900 !important;
+    line-height: 66px;
+    letter-spacing: 0.2em;
+    color: #B57556;
+}
+
+.star {
+    gap: 16px;
+    margin-bottom: 17px;
+}
+
+.star img {
+    height: 16px;
+}
+
+.star span {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: #BED3E5;
+}
+
+.shopping .row {
+    gap: 16px 20px;
+    margin-bottom: 34px;
+}
+
+.shopping .row img {
+    width: 80.5px;
+    padding: 0;
+}
+
+.market_inner>img {
+    margin-bottom: 11.5px;
+}
+
+.market_middle>img {
+    margin-top: 14px;
+}
+
+@media screen and (max-width:769px) {
+    .container_1 ol {
+        padding: 0 0 0 16px;
+    }
+
+    .market_outside {
+        width: unset;
+    }
+}
+
+@media screen and (max-width:625px) {
+    .row .gift:nth-child(9) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .container_1 {
+        padding: 60px 24px 40px 24px;
+    }
+
+    .container_1 ol {
+        padding: 0 0 0 21px;
+    }
+
+    .lottery_sand {
+        padding: 40px 24px;
+
+    }
+
+    .lottery_sand .row {
+        gap: 16px;
+    }
+}
+
+/* gift變1格 */
+@media screen and (max-width:395px) {
+    .gift {
+        margin: 25px 0px;
+        transform: scale(1.2);
+    }
+
+    .container_1_title h2,
+    .container_1_title h6 {
+        letter-spacing: 0.18em;
+    }
+
+    .market_outside>img {
+        width: 375px;
+    }
+}

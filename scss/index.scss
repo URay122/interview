@@ -1,0 +1,514 @@
+@import "mixin.scss";
+
+/* 第一個container */
+.container_1 {
+  background: {
+    image: url(../image/whitewaves.png);
+    color: #204379;
+    repeat: no-repeat;
+    size: 400% 85%;
+    position: bottom;
+  }
+  padding: 60px 24px 40px;
+
+  button {
+    display: block;
+    margin: 32px auto;
+    width: 200px;
+    padding: 16px 20px;
+    background-color: #b57556;
+    box-shadow: 0 0 20px #faa3a3e8;
+    @include border-model(0, null, 50px);
+    @include font-model(18px, #fff);
+  }
+
+  .container_1_title {
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+  }
+
+  .container_1_title h2 {
+    @include word-space(40px, 0.2em);
+  }
+  .container_1_title h6 {
+    @include word-space(35px, 0.2em);
+  }
+
+  article {
+    position: relative;
+    margin: 0 auto;
+    max-width: 808px;
+    background-color: #dae4f1;
+    padding: 24px 16px;
+    color: #204379;
+    @include border-model(2px, #b57556, 20px);
+    div {
+      &:first-child {
+        margin-bottom: 24px;
+      }
+      .paragraph {
+        margin-bottom: 16px;
+
+        h5 {
+          margin: 0 3px;
+        }
+      }
+    }
+  }
+  ol {
+    padding: 0 16px;
+    li {
+      p {
+        @include font-model(16px, null, 400);
+        line-height: 28.8px;
+      }
+      &::marker {
+        font-weight: 400;
+      }
+    }
+
+    &:nth-child(2) li:first-child p span {
+      text-decoration: underline;
+    }
+  }
+
+  .boat_bubble {
+    position: absolute;
+    right: 2%;
+    top: -8%;
+    .boat_1 {
+      position: relative;
+    }
+
+    .paddle {
+      position: absolute;
+      left: 25%;
+      top: 15%;
+    }
+
+    .bubble_big {
+      position: absolute;
+      left: 40%;
+      bottom: 100%;
+    }
+
+    .bubble_small {
+      position: absolute;
+      right: 15%;
+      bottom: 150%;
+    }
+  }
+
+  .boat_fire {
+    position: absolute;
+    left: 3%;
+    top: 92%;
+
+    .boat_2 {
+      position: relative;
+      left: 12%;
+    }
+
+    .fire {
+      position: absolute;
+      left: -25%;
+      top: 25%;
+    }
+  }
+}
+/* container_1 & container_1 中間的浪*/
+.waves {
+  width: 100%;
+  display: block;
+}
+
+.container_2 {
+  background-color: #e2d9d3;
+
+  .lottery_info1 {
+    padding: 40px 24px 58px;
+    margin: 0 auto;
+    max-width: 808px;
+
+    .lottery_info1_content {
+      padding-top: 40px;
+
+      & > span {
+        display: none;
+        line-height: 21px;
+        text-align: center;
+        margin-top: 8px;
+        @include font-model(14px, red, 400);
+      }
+
+      form {
+        position: relative;
+        padding: 40px 20px;
+        margin-bottom: 40px;
+        background-color: #fff;
+        box-shadow: 0px 1px 20px 0px #49484840;
+        @include border-model(2px, #b57556, 16px);
+
+        div:not(.turtle) {
+          display: flex;
+          flex-direction: column;
+        }
+
+        div:not(:last-child, .turtle) {
+          margin-bottom: 20px;
+        }
+
+        label {
+          @include font-model(16px, #204379, 400);
+          border: none !important;
+        }
+
+        input {
+          padding: 8px 16px;
+          font-size: 16px;
+          color: #000 !important;
+          @include border-model(1px, #204379, 16px);
+        }
+
+        #payment::-webkit-calendar-picker-indicator,
+        #store::-webkit-calendar-picker-indicator {
+          opacity: 1;
+          color: #204379;
+        }
+
+        span {
+          @include font-model(14px, #b57556);
+        }
+
+        .turtle {
+          position: absolute;
+          left: 50%;
+          bottom: 95%;
+          transform: translate(-50%, 0px);
+
+          h5 {
+            box-shadow: 0px 1px 10px 0px #49484840;
+            background: #fff;
+            color: #b57556;
+            text-align: center;
+            padding: 10px 20px;
+            @include border-model(2px, #b57556, 50px);
+            @include word-space(22.5px, 0.2em);
+          }
+          img {
+            position: absolute;
+            left: 81%;
+            bottom: -20%;
+          }
+        }
+      }
+      #btn-submit {
+        display: block;
+        margin: 0 auto;
+        box-shadow: 0px -4px 10px 0px #ffffffe5, 0px 4px 10px 0px #28232359;
+        background: #b57556;
+        color: #fff;
+        padding: 16px 20px;
+        width: 200px;
+        @include border-model(0, null, 50px);
+        @include word-space(22.5px, 0.2em);
+
+        & > div {
+          gap: 16px;
+
+          & > img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .lottery_sand {
+    background: {
+      image: url(../image/sand.png);
+      repeat: no-repeat;
+      position: center;
+      size: cover;
+    }
+    padding: 40px 24px;
+    @include border-model(0, null, 40px 40px 0px 0px);
+
+    .lottery_gift {
+      max-width: 598px;
+      margin: 0 auto;
+
+      .row {
+        gap: 32px;
+
+        .gift {
+          width: 178px;
+          height: 112px;
+          border-radius: 20px;
+          background-color: #ffffff;
+          box-shadow: 0px 8px 0px 0px #edeef0;
+          position: relative;
+          padding: 0;
+          margin: 10px 0px;
+
+          &:nth-child(9) {
+            opacity: 0;
+          }
+          &:nth-child(4) .certificateA span,
+          &:nth-child(5) .certificateA span,
+          &:nth-child(6) .certificateA span,
+          &:nth-child(7) .certificateA span,
+          &:nth-child(8) .certificateA span {
+            transform: translate(-50%, calc(-50% + 15px));
+          }
+
+          .certificateA {
+            span {
+              color: #fff;
+              font-size: 17px;
+              position: absolute;
+              z-index: 2;
+              left: 50%;
+              transform: translate(-50%, calc(-50% + 7.5px));
+            }
+
+            img {
+              position: relative;
+              left: 50%;
+              transform: translate(-50%, calc(-50% + 15px));
+            }
+
+            button {
+              padding: 3px 10px;
+              width: 45px;
+              position: absolute;
+              right: 8px;
+              transform: translate(0%, calc(-50% + 31px));
+              @include border-model(1px, #a0bcc8, 50px);
+              @include font-model(12px, #a0bcc8, 400);
+            }
+          }
+          h5 {
+            color: #a0bcc8;
+            text-align: center;
+            line-height: 22.5px;
+          }
+        }
+      }
+    }
+  }
+  .lottery_info2 {
+    padding: 40px 24px;
+
+    .lottery_info2_inner {
+      text-align: center;
+      position: relative;
+      max-width: 274px;
+      margin: 0 auto;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 75px;
+        height: 1px;
+        background-color: #204379;
+      }
+
+      &::before {
+        transform: translate(-50%, -50%) rotate(254deg);
+        left: 0;
+      }
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(106deg);
+        left: 100%;
+      }
+
+      h4 {
+        color: #204379;
+        line-height: 28px;
+
+        &:nth-child(1) {
+          color: #b57556;
+        }
+      }
+    }
+
+    img {
+      display: block;
+      margin: 20px auto 0;
+    }
+  }
+
+  .shopping {
+    background-color: #204379;
+    padding: 40px 19px;
+    border-radius: 50px 50px 0px 0px;
+
+    & > h4 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 24px;
+      @include word-space($line-height: 40px, $letter-spacing: 0.2em);
+    }
+
+    .market_outside {
+      text-align: center;
+      margin: 0 auto;
+      position: relative;
+      height: 493px;
+      width: 376px;
+
+      & > img {
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        transform: translate(-50%, 0px);
+      }
+    }
+
+    .market_middle {
+      height: 492px;
+      width: 341px;
+      padding-top: 23px;
+      background: #d3d4db;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 0px);
+      @include border-model(0, null, 50px 50px 30px 30px);
+
+      & > img {
+        margin-top: 14px;
+      }
+    }
+
+    .market_inner {
+      width: 320px;
+      margin: 0 auto;
+      background-color: #f7f7f8;
+      padding: 53px 53px 49px;
+      text-align: center;
+      height: 432px;
+      border-radius: 20px 20px 0 0;
+
+      h2 {
+        font-weight: 900 !important;
+        @include word-space(66px, 0.2em);
+        color: #b57556;
+      }
+
+      .star {
+        gap: 16px;
+        margin-bottom: 17px;
+
+        img {
+          height: 16px;
+        }
+
+        span {
+          @include font-model(12px, #bed3e5, $weight: 700);
+          @include word-space(25px, 0.2em);
+        }
+      }
+
+      .row {
+        gap: 16px 20px;
+        margin-bottom: 34px;
+
+        img {
+          width: 80.5px;
+          padding: 0;
+        }
+      }
+
+      & > img {
+        margin-bottom: 11.5px;
+      }
+    }
+  }
+}
+@include rwd(769px) {
+  .container_1 ol {
+    padding: 0 0 0 16px;
+  }
+
+  .container_2 {
+    .shopping {
+      .market_outside {
+        width: unset;
+      }
+    }
+  }
+}
+
+@include rwd(639px) {
+  .container_2 {
+    .lottery_sand {
+      .lottery_gift {
+        .row {
+          .gift:nth-child(9) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include rwd(425px) {
+  .container_1 {
+    ol {
+      padding: 0 0 0 21px;
+    }
+  }
+
+  .container_2 {
+    .lottery_sand {
+      padding: 40px 24px;
+      .lottery_gift {
+        .row {
+          gap: 16px;
+        }
+      }
+    }
+  }
+}
+
+@include rwd(396px) {
+  .container_2 {
+    .lottery_sand {
+      .lottery_gift {
+        .row {
+          .gift {
+            margin: 10px 0px;
+            width: 166px;
+          }
+        }
+      }
+    }
+  }
+
+  .container_1 {
+    .container_1_title {
+      h2,
+      h6 {
+        letter-spacing: 0.18em;
+      }
+    }
+  }
+
+  .container_2 {
+    .shopping {
+      .market_outside {
+        & > img {
+          width: 375px;
+        }
+      }
+    }
+  }
+}
